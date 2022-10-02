@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.nav-items {
+  gap: 4px;
+}
+.nav-item a {
+  position: relative;
+  transition: all 0.5s;
+}
+.nav-item a::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #fff;
+
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+.nav-item a:hover {
+  color: #fff !important;
+  scale: 1.1;
+}
+.nav-item a:hover::before {
+  width: 70% !important;
+}
+.enroll-btn {
+  border: 2px solid #fff;
+  background: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  transition: all 0.5s;
+  text-align: center;
+}
+.enroll-btn:hover {
+  background-color: #fff;
+  color: rgba(75, 227, 181, 255);
+}
+
+.pricecard {
+  max-width: 23em !important;
+  min-height: 18em !important;
+  border: 3px solid rgba(75, 214, 206, 255);
+  border-radius: 20px;
+}
+
+li {
+  list-style-type: none;
+}
