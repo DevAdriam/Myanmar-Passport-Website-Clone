@@ -1,10 +1,5 @@
-var getnavitem = document.querySelectorAll(".nav-item");
-console.log(getnavitem);
+var getyear = document.querySelector(".year");
 
-function clickactive() {
-  for (let i = 0; i < getnavitem; i++) {
-    getnavitem[i].addEventListener("click", function () {
-      console.log("clicked");
-    });
-  }
-}
+let getdate = new Date().getFullYear();
+
+getyear.textContent = getdate;
