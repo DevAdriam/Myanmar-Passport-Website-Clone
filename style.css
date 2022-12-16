@@ -1,125 +1,125 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 @media (max-width: 480px) {
-  .navbar-brand {
-    font-size: 13px;
-  }
+	.navbar-brand {
+		font-size: 13px;
+	}
 }
 .nav-link {
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-family: sans-serif;
-  font-weight: 700;
+	color: rgba(255, 255, 255, 0.6) !important;
+	font-family: sans-serif;
+	font-weight: 700;
 }
 .nav-items {
-  gap: 4px;
+	gap: 4px;
 }
 .nav-item a {
-  position: relative;
-  transition: all 0.5s;
+	position: relative;
+	transition: all 0.5s;
 }
 .nav-item a::before {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #fff;
+	content: "";
+	width: 0;
+	height: 3px;
+	background: #fff;
 
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.5s;
+	position: absolute;
+	bottom: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
 }
 .nav-item a:hover {
-  color: #fff !important;
-  scale: 1.1;
+	color: #fff !important;
+	scale: 1.1;
 }
 .nav-item a:hover::before {
-  width: 70% !important;
+	width: 70% !important;
 }
 .enroll-btn {
-  border: 2px solid #fff;
-  background: none;
-  padding: 10px 30px;
-  border-radius: 30px;
-  color: #fff;
-  transition: all 0.5s;
-  text-align: center;
+	border: 2px solid #fff;
+	background: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: #fff;
+	transition: all 0.5s;
+	text-align: center;
 }
 .enroll-btn:hover {
-  background-color: #fff;
-  color: rgba(75, 227, 181, 255);
+	background-color: #fff;
+	color: rgba(75, 227, 181, 255);
 }
 
 .pricecard {
-  max-width: 23em !important;
-  min-height: 18em !important;
-  border: 3px solid rgba(75, 214, 206, 255);
-  border-radius: 20px;
+	max-width: 23em !important;
+	min-height: 18em !important;
+	border: 3px solid rgba(75, 214, 206, 255);
+	border-radius: 20px;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 .color {
-  background-color: red;
+	background-color: red;
 }
 .accordion-button {
-  border: none;
-  background: none;
-  flex-flow: row-reverse;
-  gap: 10px;
+	border: none;
+	background: none;
+	flex-flow: row-reverse;
+	gap: 10px;
 }
 .accordion-button:focus {
-  box-shadow: none !important;
-  border: none !important;
-  background: none;
-  background-image: none;
+	box-shadow: none !important;
+	border: none !important;
+	background: none;
+	background-image: none;
 }
 
 .accordion-button:hover {
-  color: rgba(75, 214, 206, 255);
+	color: rgba(75, 214, 206, 255);
 }
 
 .accordion-header {
-  background: none;
+	background: none;
 }
 .accordion-item {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-radius: 0 0 0 0;
-  border-bottom: 2px solid rgba(75, 214, 206, 255);
-  background: none;
-  /* 
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0 0 0 0;
+	border-bottom: 2px solid rgba(75, 214, 206, 255);
+	background: none;
+	/* 
   display: flex;
   justify-content: left !important; */
 }
 .accordioncustom {
-  display: flex;
-  justify-content: left;
+	display: flex;
+	justify-content: left;
 }
 
 .accordion-button:not(.collapsed) {
-  color: black !important;
-  border: none;
-  background: none;
-  box-shadow: none;
+	color: black !important;
+	border: none;
+	background: none;
+	box-shadow: none;
 }
 
 .accordion-button::after {
-  background-image: url(./down-arrow.png);
-  background-size: 1.15rem;
-  transform: rotate(180deg);
+	background-image: url(./down-arrow.png);
+	background-size: 1.15rem;
+	transform: rotate(360deg);
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(./down-arrow.png);
-  transform: rotate(0deg);
+	background-image: url(./down-arrow.png);
+	transform: rotate(180deg);
 }
 
 footer {
-  margin-top: auto;
+	margin-top: auto;
 }
